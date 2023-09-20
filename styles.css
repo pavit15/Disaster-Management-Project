@@ -183,15 +183,15 @@ section{
     border: none; 
     border: radius 5px;
 }
+
 .nav-link1{
     background-color: darkgreen; 
     color: white; 
-    padding: 20px 20px;
-    position: fixed;
-    left: 800px; /* Adjust the distance from the left edge as needed */
-    transform: translateY(-50%);
+    padding: 15px 20px;
+    left: 800px; 
     border: none; 
     border: radius 5px;
+   
 }
 
 .nav-link:hover {
