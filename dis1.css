@@ -86,3 +86,9 @@ input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
+.Contact-details {
+    background-color: #fff;
+    width: 80vw;
+    height:90vh;
+}
+
