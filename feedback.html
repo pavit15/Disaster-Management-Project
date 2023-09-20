@@ -2,7 +2,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title><center>Feedback Form</center></title>
+    <title>Feedback Form</title>
+    <link rel="stylesheet" type="text/css" href="feedback.css">
     <style>
         
     </style>
@@ -20,112 +21,105 @@
                 <input type="email" id="email" name="email" required>
             </div>
             
-        <div class="left-align">
-            <div class="radio-group" style="vertical-align:left">
-			<label>What was your primary reason for visiting ur website today ?</label>
-			<label for="inp-1">
-				<input type="radio"  name="inp"/> Seeking info on disaster preparedness </label>
-			<label for="inp-2">
-				<input type="radio"  name="inp"/>Loking for emergency contact info</label>
-			<label for="inp-3">
-				<input type="radio" name="inp"/>Researching recent disasters or incidents</label>
-			<br>
-			<label for="inp-4" style="vertical-align">
-				<input type="radio"  name="inp"/>others(please specify)
-				<textarea name="comment" id="comment">
-			</textarea></label>
-			</div>
-		</div>
+            <div class="left-align">
+                <div class="radio-group" style="vertical-align:left">
+                    <label>What was your primary reason for visiting our website today?</label>
+                    <label for="inp-1">
+                        <input type="radio" name="inp"/> Seeking info on disaster preparedness
+                    </label>
+                    <label for="inp-2">
+                        <input type="radio" name="inp"/> Looking for emergency contact info
+                    </label>
+                    <label for="inp-3">
+                        <input type="radio" name="inp"/> Researching recent disasters or incidents
+                    </label>
+                    <br>
+                    <label for="inp-4" style="display:vertical-align">
+                        <input type="radio" name="inp"/> Others (please specify)
+                        <textarea name="comment" id="comment"></textarea>
+                    </label>
+                </div>
+            </div>
             <br><br>
             
             <div class="radio-group">
-                <label for="question2">Did you encounter any technical issues while using our website ? </label><br>
+                <label for="question2">Did you encounter any technical issues while using our website?</label><br>
                 <input type="radio" id="question2-yes" name="question2" value="yes">
                 <label for="question2-yes">Yes</label>
                 <input type="radio" id="question2-no" name="question2" value="no">
                 <label for="question2-no">No</label>
             </div>
         
-        <br><br>
+            <br><br>
         
             <div class="radio-group">
-                <label for="question3">Will you recommend others to participate in mock drills and get information through our website ?</label>
+                <label for="question3">Will you recommend others to participate in mock drills and get information through our website?</label>
                 <input type="radio" id="question3-yes" name="question3" value="yes">
                 <label for="question3-yes">Yes</label>
                 <input type="radio" id="question3-no" name="question3" value="no">
                 <label for="question3-no">No</label>
             </div>    
-        <br><br>
+            <br><br>
         
             <div class="radio-group">    
-                <label for="question4">From where did you get to know about our website ?</label><br>
-                <input type="radio" id="question4-yes" data-type="horizontal" name="question4" value="Family or Friends">
-                <label for="question4-yes">Family or Friends</label>
-                <input type="radio" id="question4-no" data-type="horizontal" name="question4" value="Social Media">
-                <label for="question4-no">Social Media</label>
-                <input type="radio" id="question4-no" data-type="horizontal" name="question4" value="By Search">
-                <label for="question4-no">By Search</label>
+                <label for="question4">From where did you get to know about our website?</label><br>
+                <input type="radio" id="question4-yes-family" data-type="horizontal" name="question4" value="Family or Friends">
+                <label for="question4-yes-family">Family or Friends</label>
+                <input type="radio" id="question4-no-social" data-type="horizontal" name="question4" value="Social Media">
+                <label for="question4-no-social">Social Media</label>
+                <input type="radio" id="question4-no-search" data-type="horizontal" name="question4" value="By Search">
+                <label for="question4-no-search">By Search</label>
             </div>
             <br><br>
             
-            <div class="radio-group" >    
-        <label>Rate Your Overall Experience</label><br>
-         <div style="color:grey">
-         <span style="float:left">
-             Worse
-        </span>
-        <span style="float:right">
-             Best
-            </span>
+            <div class="radio-group">
+                <label>Rate Your Overall Experience</label><br>
+                <div class="scale-rating">
+                    <span class="worst-text">Worst</span>
+                    
+                    <label value="1">
+                        <input type="radio" name="rating">
+                        <label style="width:100%;"></label>
+                    </label>
+                    <label value="2">
+                        <input type="radio" name="rating">
+                        <label style="width:100%;"></label>
+                    </label>
+                    <label value="3">
+                        <input type="radio" name="rating">
+                        <label style="width:100%;"></label>
+                    </label>
+                    <label value="4">
+                        <input type="radio" name="rating">
+                        <label style="width:100%;"></label>
+                    </label>
+                    <label value="5">
+                        <input type="radio" name="rating">
+                        <label style="width:100%;"></label>
+                    </label>
+                    <span class="best-text">Best</span>
+                </div>
             </div>
-            <span class="scale-rating">
-         <label value="1">
-        <input type="radio" name="rating">
-        <label style="width:100%;"></label>
-        </label>
-         <label value="2">
-         <input type="radio" name="rating">
-        <label style="width:100%;"></label>
-        </label>
-        <label value="3">
-        <input type="radio" name="rating">
-        <label style="width:100%;"></label>
-        </label>
-         <label value="4">
-        <input type="radio" name="rating">
-        <label style="width:100%;"></label>
-        </label>
-        <label value="5">
-        <input type="radio" name="rating">
-        <label style="width:100%;"></label>
-        </label> 
-    </span>
-    </div>
             
             <div class="form-group">
                 <label for="brief-feedback">How Can We Improve Your Experience:</label>
                 <input type="text" id="brief-feedback" name="brief-feedback" required>
             </div>
             
-            
             <input type="submit" class="btn" value="Submit">
-            </form>
-            <div class="thank-you" id="thankYouMessage">Thank you for your feedback!
+        </form>
+        <div class="thank-you" id="thankYouMessage">Thank you for your feedback!
             <center>
-            <p><a href="https://www.google.com" class="btn btn-primary">HomePage</a></p>
+                <p><a href="index.html" class="btn btn-primary">Home Page</a></p>
             </center>
-            </div>
-            </div>
-    
-            <div class="col-rt-2">
-            <ul>
-                
-            <li><center><a href="https://www.google.com" title="Return to google homepage">Return to google.com</a>
-            </center>
-            </li>
-            
-            </ul>
-            </div>
+        </div>
+    </div>
+
+    <div class="col-rt-2">
+        <ul>
+            <li><center><a href="https://www.google.com" title="Return to Google homepage">Return to google.com</a></center></li>
+        </ul>
+    </div>
 
     <script>
         
