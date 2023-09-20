@@ -9,7 +9,7 @@
 <body>
     <h1>Name of disaster</h1>
     <p>Enter your location to get details of contacts from your local area:</p>
-    <form>
+    <form action="contact.html" method="post">
         <label for="city">City:</label>
         <select id="city" name="city">
             <option value="mum">Mumbai</option>
@@ -17,7 +17,7 @@
             <option value="kol">Kolkata</option>
         </select>
         <br>
-        <input id="goToPage2Button" type="submit" value="Submit" src="script.js">
+        <input type="submit" value="Submit">
     </form>
   
     <div class="cards-container">
@@ -27,7 +27,7 @@
         </div>
         <div class="card">
             <h2>Don'ts</h2>
-            <p>Most imp don'ts</p>
+            <p>Most important don'ts</p>
         </div>
     </div>
 </body>
