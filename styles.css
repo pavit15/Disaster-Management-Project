@@ -139,13 +139,16 @@ h1{
 
 .weather-details{
     background-color: #fff;
-    width: 36vw;
+    width: 100vw;
     height: 50vh;
     font-size: 20px;
     font-weight: bold;
     align-items: center;
     padding-top: 1.5vh;
+    padding-left: 20vh;
     border-radius: 10px; 
+    
+    
     border: 1px solid #ccc; 
 } 
 section{
@@ -185,7 +188,6 @@ section{
     color: white; 
     padding: 20px 20px;
     position: fixed;
-    
     left: 800px; /* Adjust the distance from the left edge as needed */
     transform: translateY(-50%);
     border: none; 
