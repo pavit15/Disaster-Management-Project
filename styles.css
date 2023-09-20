@@ -2,16 +2,19 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
-    max-width: 1000px; 
+    max-width: 100%; 
     margin: 0 auto;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    position: relative;
 }
 
 h1 {
@@ -24,9 +27,10 @@ h1 {
     background-color: #ffc107; 
     border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 20px;
-    width: 100%; 
-    margin-bottom: 20px; 
+    padding: 10px 5px 5px 5px;
+    width: 80%; 
+    margin-bottom: 5px;
+     
 }
 
 .left-container {
@@ -46,32 +50,112 @@ h1 {
     margin: 10px;
     box-sizing: border-box;
     font-size: 18px; 
+    
 }
 
-.right-container {
+/* .right-container {
     width: 40%;
     display: flex;
     flex-direction: column;
     
-}
+} */
 
 .register-button {
     background-color: #007bff;
-    color: #fff;
-    border: none;
+    color: white;
+    border: solid 2px white;
     border-radius: 5px;
     padding: 15px 30px;
-    font-size: 18px; 
-    margin-bottom: 20px; 
+    font-size: 18px;
+    margin: 15px 85px 15px 25px; 
+    text-decoration:none;
+    cursor: pointer;
+    
+    
 }
 
 .right-placeholder {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 60px; 
-    width: 100%;
-    margin: 10px 0;
-    box-sizing: border-box;
-    font-size: 18px; 
+    padding: 20px 20px 100vh 20px; 
+    width: 27vw;
+    margin-right: 10px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
 }
+
+#map{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 50vh;
+    width: 70%;
+    border-radius: 1px;
+}
+
+.weather-details{
+    background-color: #fff;
+    width: 36vw;
+    height: 50vh;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    padding-top: 1.5vh;
+}
+
+
+
+.weather-list{
+    text-align: left;
+    /* padding: 20px 5px 5px 30%; */
+    margin-left:20px;   
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0%;
+}
+
+.weather-details li{
+    margin-right: 20px;
+}
+
+
+.contact-details{
+    background-color: #ffffff;
+    margin-top: 5px;
+    width: 50%;
+    text-align: center;
+
+}
+
+.contact-details table{
+    
+    text-align: center;
+    margin-left: 10px;
+}
+
+.topnav{
+
+    padding: 5px;
+    margin: 30px;
+    
+}
+
+
+/* #topnav{display:block;float:center; margin:7px 0 0 0; padding:0; list-style:none; font-size:14px; font-weight:bold; font-family:Verdana, Arial, Helvetica, sans-serif;}
+#topnav ul, #topnav li{float:left; list-style:none; margin:0; padding:0;}
+#topnav li a:link, #topnav li a:visited, #topnav li a:hover{display:block; margin:0; padding:15px 20px; color:#999999;}
+#topnav ul ul li a:link, #topnav ul ul li a:visited{border:none;}
+#topnav li.last a{margin-right:0;}
+#topnav li a:hover, #topnav ul li.active a{color:#999999;}
+#topnav li li a:link, #topnav li li a:visited{width:150px; float:none; margin:0; padding:7px 10px; font-size:12px; font-weight:normal;}
+#topnav li ul{z-index:9999; position:absolute; left:-999em; height:auto; width:170px; border-left:1px solid #CCCCCC; border-bottom:1px solid #CCCCCC;}
+#topnav li ul a{width:140px;}
+#topnav li ul ul{margin:-32px 0 0 0;}
+#topnav li:hover ul ul{left:-999em;}
+#topnav li:hover ul, #topnav li li:hover ul{left:auto;}
+#topnav li:hover{position:static;}
+#topnav li.last a{margin-right:0;} */

@@ -21,6 +21,16 @@ function displayContactInfo() {
     `;
 }
 
+// Google Map API
+
+
+function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 19.0760, lng: 72.8777}, // Change the coordinates to your desired location
+        zoom: 12 // Adjust the zoom level as needed
+    });
+}
+
 // Call the function to display contact information
 displayContactInfo();
 
