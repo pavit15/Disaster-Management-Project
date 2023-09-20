@@ -24,11 +24,13 @@
     <link rel="stylesheet" href="styles.css">
 
 
-    <title>My Website</title>
+    <title>Disaster Management</title>
 </head>
 
 <body>
-
+    <div class="container">
+        <h1><bold>Disaster Management Website</bold></h1>
+    </div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Disaster</a>
@@ -51,82 +53,78 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Feedback Form</a>
                     </li>
-
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Register.html">Register</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <div class="container">
-        <h1>Disaster Management Website</h1>
         <div class="alert-card">
             <h2>Upcoming Alerts!</h2>
             <p>Upcoming disaster info: </p>
         </div>
-        <a href="register.html" class="register-button">Register</a>
 
-
-        <!-- google map -->
-        <div id="map"></div>
-
-        <div class="right-container">
-            <div class="right-placeholder">
-                <h2>Recent Disasters News:</h2>
-                <p>Links to a database with news channel links and all</p>
+        <div class="content-container">
+            <div id="map"></div>
+            <div class="right-container">
+                <div class="right-placeholder">
+                    <h2>Recent Disasters News:</h2>
+                    <p>Links to a database with news channel links and all</p>
+                </div>
             </div>
         </div>
 
-
-        <div class="weather-details">
-            <div class="weather-title">Weather Details</div>
-            <ul class="weather-list">
-                <li>Temperature : 27</li>
-                <li>Wind: 15m/s</li>
-                <li>Precipitation: 20% </li>
-                <li>Visibilty: Fog</li>
-                <li>Air Quality: Smoke</li>
-                <li>Pressure : 2atm</li>
-            </ul>
+        <div class="info-boxes">
+            <div class="weather-details">
+                <div class="weather-title">Weather Details</div>
+                <ul class="weather-list">
+                    <li>Temperature : 27</li>
+                    <li>Wind: 15m/s</li>
+                    <li>Precipitation: 20% </li>
+                    <li>Visibility: Fog</li>
+                    <li>Air Quality: Smoke</li>
+                    <li>Pressure : 2atm</li>
+                </ul>
+            </div>
+    
+            <div class="card">
+                <h2>Do's and Don'ts</h2>
+                <ul>
+                    <li>This is a Do</li>
+                    <li>This is a Don't</li>
+                    <li>This is a Do</li>
+                    <li>This is a Don't</li>
+                    <li>This is a Do</li>
+                    <li>This is a Don't</li>
+                </ul>
+            </div>
+    
+            <div class="contact-details">
+                <h2>Contact Details</h2>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td>District Collector</td>
+                        <td>2589 6160</td>
+                    </tr>
+                    <tr>
+                        <td>Directorate of Industrial Safety & Health</td>
+                        <td>2265 2558</td>
+                    </tr>
+                    <tr>
+                        <td>District Energy Officer</td>
+                        <td>2647 2131</td>
+                    </tr>
+                </table>
+            </div>
         </div>
-
-        <div class="card">
-            <h2>Do and Dont's</h2>
-            <ul>
-                <li>This is first Do</li>
-                <li>This is first Donts</li>
-                <li>This is first Do</li>
-                <li>This is first Donts</li>
-                <li>This is first Do</li>
-                <li>This is first Donts</li>
-            </ul>
-        </div>
-
-        <div class="contact-details">
-            <h2>Contact Details</h2>
-            <table>
-                <tr>
-                    <th>Name</th>
-                    <th>Contact</th>
-                </tr>
-                <tr>
-                    <td>District Collector</td>
-                    <td>2589 6160</td>
-                </tr>
-                <tr>
-                    <td>Directorate	of Industrial Safety & Health </td>
-                    <td>2265 2558</td>
-                </tr>
-                <tr>
-                    <td>District Energy Officer</td>
-                    <td>2647 2131</td>
-                
-                </tr> 
-            </table>
-        </div>
-
-
-
-    </div>
-</body>
-
-</html>
+    
+    </body>
+    
+    </html>

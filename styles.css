@@ -12,25 +12,26 @@ body {
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     position: relative;
+    text-align: center;
 }
 
-h1 {
+.container h1{
+    font-weight: bold;
+    font-family: Arial, sans-serif;
     color: #333;
-    width: 100%;
-    font-size: 24px; 
+    text-align: center;
 }
 
 .alert-card {
-    background-color: #ffc107; 
+    background-color: #ffbf00; 
     border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px 5px 5px 5px;
-    width: 80%; 
-    margin-bottom: 5px;
-     
+    border-radius: 10px;
+    padding: 20px 5px 5px 5px;
+    width: 98%;
+    margin: 5px auto;
 }
 
 .left-container {
@@ -41,7 +42,7 @@ h1 {
     align-items: flex-start;
 }
 
-.card {
+/*.card {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -51,13 +52,14 @@ h1 {
     box-sizing: border-box;
     font-size: 18px; 
     
-}
+} */
 
 /* .right-container {
-    width: 40%;
+    width: 30%;
     display: flex;
-    flex-direction: column;
-    
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
 } */
 
 .register-button {
@@ -79,7 +81,7 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px 20px 100vh 20px; 
-    width: 27vw;
+    width: 45vw;
     margin-right: 10px;
     margin-top: 15px;
     display: flex;
@@ -88,15 +90,45 @@ h1 {
 
 }
 
-#map{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    height: 50vh;
-    width: 70%;
-    border-radius: 1px;
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.weather-details{
+#map {
+    flex: 1;
+    width: 600px; 
+    height: 400px; 
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.right-container {
+    flex: 1;
+    overflow-y: auto;
+    width: 600px;
+    max-height: 400px;
+}
+
+.info-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.weather-details,
+.card,
+.contact-details {
+    flex-basis: calc(33.3% - 10px);
+    background-color: #fff;
+    align-items: center;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* .weather-details{
     background-color: #fff;
     width: 36vw;
     height: 50vh;
@@ -104,7 +136,7 @@ h1 {
     font-weight: bold;
     align-items: center;
     padding-top: 1.5vh;
-}
+} */
 
 
 
@@ -123,13 +155,13 @@ h1 {
 }
 
 
-.contact-details{
+/* .contact-details{
     background-color: #ffffff;
     margin-top: 5px;
     width: 50%;
     text-align: center;
 
-}
+} */
 
 .contact-details table{
     
@@ -145,7 +177,7 @@ h1 {
 }
 
 
-/* #topnav{display:block;float:center; margin:7px 0 0 0; padding:0; list-style:none; font-size:14px; font-weight:bold; font-family:Verdana, Arial, Helvetica, sans-serif;}
+#topnav{display:block;float:center; margin:7px 0 0 0; padding:0; list-style:none; font-size:14px; font-weight:bold; font-family:Verdana, Arial, Helvetica, sans-serif;}
 #topnav ul, #topnav li{float:left; list-style:none; margin:0; padding:0;}
 #topnav li a:link, #topnav li a:visited, #topnav li a:hover{display:block; margin:0; padding:15px 20px; color:#999999;}
 #topnav ul ul li a:link, #topnav ul ul li a:visited{border:none;}
@@ -158,4 +190,4 @@ h1 {
 #topnav li:hover ul ul{left:-999em;}
 #topnav li:hover ul, #topnav li li:hover ul{left:auto;}
 #topnav li:hover{position:static;}
-#topnav li.last a{margin-right:0;} */
+#topnav li.last a{margin-right:0;}
