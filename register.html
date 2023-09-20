@@ -7,65 +7,61 @@
     <link rel="stylesheet" href="register.css"> 
 </head>
 <body>
-    <h1>REGISTRATIONS</h1>
-    <h2>Mock Drills and Exercises</h2>
+    <header>
+        <h1>REGISTRATION</h1>
+        <h2>Mock Drills and Exercises</h2>
+    </header>
 
-    <p> Mock disaster exercises in School Safety Programmes(SSPs) and Community Awareness Programmes(CAPs) are valuable tools for preparing students, teachers, and staff and every comman man for various emergency situations. These exercises help participants practice their response strategies and improve their readiness in case of a real disaster. 
-        These are some mock exercises that are to be conducted as part of SSPs and CAPs:<br>
-    <br>
-        1.Fire Drill:<br>
-        Simulating a fire emergency and practicing evacuation procedures.<br>
-    <br>
-        2.Earthquake Drill:<br>
-        Teaching students to "Drop, Cover, and Hold On" during and evacuatiion after an earthquake.<br>
-    <br>
-        3.Cyclone/Landslides Drill:<br>
-        Alerting participants to the warning and discussing the importance of staying low and covering heads.<br>
-    <br>
-        3.Evacuation Drill:<br>
-        Prepare for scenarios like gas leaks, chemical spills, or other hazards and orderly evacuate.<br>      
-    <br>
-        4.Multi-Hazard Scenario Drill:<br>
-        Creating complex scenarios that involve multiple hazards and evaluating the effectiveness of emergency plans.<br>
-    <br>
-        and many more..<br>
-    <br>
-    Kindly register yourself for the exercises
-    </p>
-    <form name="registration" class="registartion-form" onsubmit="return formValidation()">
-      <table>
-        <tr>
-          <td><label for="Full_Name">Full Name:</label></td>
-          <td><input type="text" id="first_name" name="Full_Name" required></td>
-        </tr>
-        <tr>
-            <td><label for="phone">Phone Number:</label></td>
-            <td><input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required></td>
-        </tr>
-        <tr>
-          <td><label for="email">Email:</label></td>
-          <td><input type="text" name="email" id="email" required></td>
-        </tr>
-        <tr>
-            <td><label for="aadhar">Aadhar Card Number:</label></td>
-            <td><input type="text" id="aadhar" name="aadhar" pattern="[0-9]{12}"  required></td>
-        </tr>
-        <tr>
-            <td><label for="address">Address:</label></td>
-            <td><input type="text" id="address" name="address" required></td>
-        </tr>
-        <tr>
-          <td><label for="gender">Gender:</label></td>
-          <td>Male: <input type="radio" name="gender" value="male">
-            Female: <input type="radio" name="gender" value="female">
-            Other: <input type="radio" name="gender" value="other"></td>
-        </tr>
-        
-        
-        <tr>
-          <td colspan="2"><input type="submit" class="submit" value="Register" /></td>
-        </tr>
-      </table>
-    </form>
-    <p>Hope to see you soon!!</p>
-  </div>
+    <main>
+        <p>Mock disaster exercises in School Safety Programmes (SSPs) and Community Awareness Programmes (CAPs) are valuable tools for preparing students, teachers, and staff and every common man for various emergency situations. These exercises help participants practice their response strategies and improve their readiness in case of a real disaster.</p>
+
+        <p>These are some mock exercises that are to be conducted as part of SSPs and CAPs:</p>
+
+        <ul>
+            <li>Fire Drill: Simulating a fire emergency and practicing evacuation procedures.</li>
+            <li>Earthquake Drill: Teaching students to "Drop, Cover, and Hold On" during and evacuation after an earthquake.</li>
+            <li>Cyclone/Landslides Drill: Alerting participants to the warning and discussing the importance of staying low and covering heads.</li>
+            <li>Evacuation Drill: Prepare for scenarios like gas leaks, chemical spills, or other hazards and orderly evacuate.</li>
+            <li>Multi-Hazard Scenario Drill: Creating complex scenarios that involve multiple hazards and evaluating the effectiveness of emergency plans.</li>
+        </ul>
+
+        <p style="text-align: center; font-weight: bold;">Kindly register yourself for the exercises:</p>
+        <form name="registration" class="registration-form" onsubmit="return formValidation()">
+            <table>
+                <tr>
+                    <td><label for="Full_Name">Full Name:</label></td>
+                    <td><input type="text" id="first_name" name="Full_Name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone Number:</label></td>
+                    <td><input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" name="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="aadhar">Aadhar Card Number:</label></td>
+                    <td><input type="text" id="aadhar" name="aadhar" pattern="[0-9]{12}" required></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td><textarea id="address" name="address" required></textarea></td>
+                </tr>
+                <tr>
+                  <td><label for="gender">Gender:</label></td>
+                  <td>
+                      <input type="radio" name="gender" value="male" required>Male<br>
+                      <input type="radio" name="gender" value="female" required>Female<br>             
+                      <input type="radio" name="gender" value="other" required>Other<br>                  
+                  </td>
+              </tr>
+                <tr>
+                    <td colspan="4"><input type="submit" class="submit" value="Register" /></td>
+                </tr>
+            </table>
+        </form>
+        <p style="text-align: center; font-weight: bold;">Hope to see you soon!!</p>
+    </main>
+</body>
+</html>
