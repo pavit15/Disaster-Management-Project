@@ -6,15 +6,72 @@
     <title>Disaster Dos and Don'ts</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-</style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .disaster-card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .disaster-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            margin: 10px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #666;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
 </head>
 <body>
-       
-       <div class="container">
-        <h1><center>Earthquake</center></h1>
-    <div class="disaster-card-container">
-        <div class="disaster-card" id="earthquake-card">
-           
+    <div class="header">
+        <h1>Disaster Dos and Don'ts</h1>
+    </div>
+
+    <div class="container">
+        <div class="disaster-card">
+            <h2>Earthquake</h2>
             <div class="dos">
                 <h3>Dos</h3>
                 <ul>
@@ -23,26 +80,21 @@
                     <li>Drop, cover, and hold on during shaking.</li>
                 </ul>
             </div>
-            </div>
-            </div>
-            </div>
-            
-        
-        <div class="disaster-card" id="earthquake-card1">    
-            <div class="donts">
-                <h3>Don'ts</h3>
-                <ul>
-                    <li>Don't use elevators.</li>
-                    <li>Don't run outside during shaking.</li>
-                    <li>Don't stand near windows or heavy objects.</li>
-                </ul>
-            </div>
-         </div>
-        <div class="container">
-        <h1><center>Floods</center></h1>
-    <div class="disaster-card-container">
-        <div class="disaster-card" id="flood-card">
-           
+        </div>
+
+        <div class="disaster-card">
+            <h3>Don'ts</h3>
+            <ul>
+                <li>Don't use elevators.</li>
+                <li>Don't run outside during shaking.</li>
+                <li>Don't stand near windows or heavy objects.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="disaster-card">
+            <h2>Floods</h2>
             <div class="dos">
                 <h3>Dos</h3>
                 <ul>
@@ -51,26 +103,21 @@
                     <li>Have an emergency kit ready.</li>
                 </ul>
             </div>
-            </div>
-            <div class="disaster-card" id="flood-card1">
-            <div class="donts">
-                <h3>Don'ts</h3>
-                <ul>
-                    <li>Don't walk or drive through floodwaters.</li>
-                    <li>Don't ignore evacuation orders.</li>
-                    <li>Don't touch electrical equipment in flooded areas.</li>
-                </ul>
-            </div>
         </div>
+
+        <div class="disaster-card">
+            <h3>Don'ts</h3>
+            <ul>
+                <li>Don't walk or drive through floodwaters.</li>
+                <li>Don't ignore evacuation orders.</li>
+                <li>Don't touch electrical equipment in flooded areas.</li>
+            </ul>
         </div>
-        
-        
-        
-        
-        <div class="container">
-        <h1><center>Hurricane</center></h1>
-    <div class="disaster-card-container">
-        <div class="disaster-card" id="hurricane-card">
+    </div>
+
+    <div class="container">
+        <div class="disaster-card">
+            <h2>Hurricane</h2>
             <div class="dos">
                 <h3>Dos</h3>
                 <ul>
@@ -79,27 +126,16 @@
                     <li>Have a disaster kit prepared.</li>
                 </ul>
             </div>
-            </div>
-            <div class="disaster-card" id="hurricane-card">
-            <div class="donts">
-                <h3>Don'ts</h3>
-                <ul>
-                    <li>Don't stay in a mobile home.</li>
-                    <li>Don't go outside during the storm.</li>
-                    <li>Don't use candles for lighting.</li>
-                </ul>
-            </div>
         </div>
-        
-        
 
-        
-    
+        <div class="disaster-card">
+            <h3>Don'ts</h3>
+            <ul>
+                <li>Don't stay in a mobile home.</li>
+                <li>Don't go outside during the storm.</li>
+                <li>Don't use candles for lighting.</li>
+            </ul>
+        </div>
     </div>
-    
-    <script src="script.js">
-    
-</script>
 </body>
-
 </html>
