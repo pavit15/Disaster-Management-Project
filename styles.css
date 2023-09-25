@@ -12,23 +12,26 @@ header{
     background-repeat: no-repeat;
     background-position: center center;
 }
-/* Define the animation */
-@keyframes slideIn {
+
+@keyframes FadeIn {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
         opacity: 0;
     }
     100% {
-        transform: translateX(0);
+        transform: translateX(-50%);
         opacity: 1;
     }
 }
 
-/* Apply the animation to the heading */
 .animated-heading {
-    animation: slideIn 1s ease-in-out; /* Adjust duration and timing function as needed */
+    animation: FadeIn 1.5s ease-in-out;
     text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
 h1{
     color: #000;
     font-size: 36px;
@@ -38,7 +41,6 @@ h1{
 .container {
     max-width: 100%; 
     margin: 0 auto;
-    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,11 +58,23 @@ h1{
 .alert-card {
     background-color: #ffbf00; 
     border: 1px solid #ddd;
+    color: #dddddd;
     border-radius: 10px;
     padding: 20px 5px 5px 5px;
     width: 98%;
     margin: 5px auto;
+    animation: Flashing 0.5s infinite alternate;
 }
+
+@keyframes Flashing {
+    0% {
+        background-color: #ff4646;
+    }
+    100% {
+        background-color: #e21a1a;
+    }
+}
+
 .left-container {
     width: 60%;
     display: flex;
@@ -107,10 +121,38 @@ h1{
     width: 45vw;
     margin-right: 10px;
     margin-top: 15px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     position: relative;
 }
+
+.card-d {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Add spacing between cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Style for card body */
+.card-d .card-body {
+    padding: 20px; 
+}
+
+/* Style for card titles */
+.card-d .card-title {
+    font-size: 1.25rem; /* Adjust the font size as needed */
+    font-weight: bold;
+    margin-bottom: 0.5rem; /* Add spacing below the title */
+}
+
+/* Style for card text */
+.card-d .card-text {
+    font-size: 1rem; /* Adjust the font size as needed */
+    margin-bottom: 1rem; /* Add spacing below the text */
+}
+
 .content-container {
     display: flex;
     flex-wrap: wrap;
@@ -121,6 +163,7 @@ h1{
     height: 400px; 
     margin-right: 20px;
     margin-left: 20px;
+    margin-top: 15px;
 }
 .right-container {
     flex: 1;
@@ -136,19 +179,16 @@ h1{
 }
 .weather-details,
 .card,
-
 .weather-details{
     background-color: #fff;
-    width: 100vw;
-    height: 50vh;
+    width: 94vw;
+    height: 25vh;
     font-size: 20px;
     font-weight: bold;
     align-items: center;
     padding-top: 1.5vh;
-    padding-left: 20vh;
+    padding-left: 1.5vh;
     border-radius: 10px; 
-    
-    
     border: 1px solid #ccc; 
 } 
 section{
@@ -184,22 +224,18 @@ section{
     border: radius 5px;
 }
 
-.nav-link1{
-    background-color: darkgreen; 
-    color: white; 
-    padding: 15px 20px;
-    left: 800px; 
-    border: none; 
-    border: radius 5px;
-   
+.dos-button {
+    background-color: green;
 }
 
+
 .nav-link:hover {
-    background-color: darkred; 
+    background-color: rgb(235, 77, 77); 
 }
-.nav-link1:hover {
-    background-color: darkgreen; 
-}
+
+.nav-item .dos-button:hover {
+    background-color: rgb(15, 207, 15);
+} 
 
 .topnav{
     padding: 5px;
